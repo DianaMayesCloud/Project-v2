@@ -5,7 +5,7 @@ variable "availability_zones" {
 
 variable "key_name" {
   description = "Name of key pair"
-  default     = "cali-key1"
+  default     = "cali-newproject-keypair"
 }
 
 variable "instance_type" {
