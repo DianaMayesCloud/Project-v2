@@ -1,5 +1,5 @@
 variable "availability_zones" {
-  default     = "us-west-1a,us-west-1b"
+  default     = "us-west-1b,us-west-1c"
   description = "List of availability zones"
 }
 

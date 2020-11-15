@@ -35,7 +35,7 @@
 # resource "aws_rds_cluster" "green_db" {
 #   cluster_identifier      = "aurora-cluster-demo"
 #   engine                  = "aurora-mysql"
-#   availability_zones      = ["us-west-1a", "us-west-1b"]
+#   availability_zones      = ["us-west-1b", "us-west-1c"]
 #   database_name           = "gogreen_db"
 #   master_username         = "admin"
 #   master_password         = "password"

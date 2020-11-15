@@ -1,14 +1,14 @@
-#Provision GreenPub-AZ2-Subnet in us-west-1a
+#Provision GreenPub-AZ2-Subnet in us-west-1b
 resource "aws_subnet" "pub_az2_subnet" {
   vpc_id            = aws_vpc.green_vpc.id
-  availability_zone = "us-west-1a"
+  availability_zone = "us-west-1c"
   cidr_block        = "10.0.10.0/24"
   tags = {
     Name = "GreenPub-AZ2-Subnet"
   }
 }
 
-#Provision GreenPub-AZ1-Subnet in us-west-1b
+#Provision GreenPub-AZ1-Subnet in us-west-1c
 resource "aws_subnet" "pub_az1_subnet" {
   vpc_id            = aws_vpc.green_vpc.id
   availability_zone = "us-west-1b"
@@ -18,17 +18,17 @@ resource "aws_subnet" "pub_az1_subnet" {
   }
 }
 
-#Provision GreenPriv-AZ2-Subnet in us-west-1a
+#Provision GreenPriv-AZ2-Subnet in us-west-1b
 resource "aws_subnet" "priv1_az2_subnet" {
   vpc_id            = aws_vpc.green_vpc.id
-  availability_zone = "us-west-1a"
+  availability_zone = "us-west-1c"
   cidr_block        = "10.0.20.0/24"
   tags = {
     Name = "GreenPriv1-AZ2-Subnet"
   }
 }
 
-#Provision GreenPriv2-AZ1-Subnet in us-west-1b
+#Provision GreenPriv2-AZ1-Subnet in us-west-1c
 resource "aws_subnet" "priv1_az1_subnet" {
   vpc_id            = aws_vpc.green_vpc.id
   availability_zone = "us-west-1b"
@@ -37,17 +37,17 @@ resource "aws_subnet" "priv1_az1_subnet" {
     Name = "GreenPriv1-AZ1-Subnet"
   }
 }
-#Provision GreenPriv2-AZ2-Subnet in us-west-1a
+#Provision GreenPriv2-AZ2-Subnet in us-west-1b
 resource "aws_subnet" "priv2_az2_subnet" {
   vpc_id            = aws_vpc.green_vpc.id
-  availability_zone = "us-west-1a"
+  availability_zone = "us-west-1c"
   cidr_block        = "10.0.30.0/24"
   tags = {
     Name = "GreenPriv2-AZ2-Subnet"
   }
 }
 
-#Provision GreenPriv2-AZ1-Subnet in us-west-1b
+#Provision GreenPriv2-AZ1-Subnet in us-west-1c
 resource "aws_subnet" "priv2_az1_subnet" {
   vpc_id            = aws_vpc.green_vpc.id
   availability_zone = "us-west-1b"
